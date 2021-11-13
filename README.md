@@ -14,9 +14,22 @@ Dana, a data journalist, was given an exciting opportunity to do a report about 
 
 
 ## Results
+The final product is a webpage that not only shows a table of known UFO sightings,
+ but also provides 5 filters to aid in finding specific sightings.
+ <img src=static\images\initial.png>
+ The user has 5 options to filter through the data: Date, City, State, Country, and shape.
+ <img src=static\images\filters.png>
 
+ An example of use: by typing in a state and pressing enter, only the sightings within that state remain on the table:
+ <img src=static\images\state.png>
 
-
+ Another search option is by shape, which will display only the shape they enter:
+ <img src=static\images\shape.png>
 
 
 ## Summary
+Whereas the webpage hit the initial request, there is one drawback that stands out, the invisibility of what can be entered. Without a running list of what can be entered, the user is left trying to hunt for what options are available. A dropdown list that would display options from the field would be ideal.
+
+Along with the need for a list of options in the filters, there are two additional recommendations for further development:
+1. Implementing a larger dataset that gives all known sightings(as far back as possible) and that can be regularly updated.This will give a larger representation of the volume of sightings.
+2. Modifying the "date" filter to accomodate a range of dates (i.e. a "From Date" and a "To Date"). This will allow for grouping of data in relation to time periods, not just a singular date.
