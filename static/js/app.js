@@ -59,8 +59,15 @@ function updateFilters() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
+    filters.forEach(filter => {
+      let key = d3.select('#'+filter).node().id;
+      let val = d3.select('#'+filter).node().value;
+
+      if (val) {
+        filteredData = filteredData.filter(obj=>obj[key] == val);
+      };
+    });
     
-  
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
   }
